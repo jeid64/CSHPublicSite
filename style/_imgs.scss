@@ -1,0 +1,15 @@
+.imgLink {
+	display:inline-block;
+	> img {
+		display:block;
+	}
+}
+.logo {
+	// width:24px;
+	height:24px;
+}
+%call-to-action {
+	&:after {
+		content:url('imgs/arrow.png');
+	}
+}

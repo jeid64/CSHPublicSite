@@ -1,0 +1,33 @@
+pages = ['membership', 'people', 'tour', 'contact']
+mixin nav(page)
+	nav.mainNav
+		section.more
+			dl
+				dt Public Resources
+				dd: a(href='http://schedule.csh.rit.edu/') CSH RIT Schedule Maker
+				dd: a(href='https://github.com/ComputerScienceHouse') CSH on GitHub
+				dd: a(href='https://github.com/myasonik/CSHPublicSite') Website on GitHub
+				dd: a(href='https://twitter.com/CSH_History') @CSH_History
+			dl
+				dt Member Resources
+				dd: a(href='') CA Certificate
+				dd: a(href='http://members.csh.rit.edu/') Members' Portal
+				dd: a(href='https://github.com/ComputerScienceHouse/Constitution/blob/master/constitution.pdf?raw=true') Constitution
+				dd: a(href='https://github.com/ComputerScienceHouse/Constitution/blob/master/bylaws.pdf?raw=true') By-laws
+				dd: a(href='https://twitter.com/OPCOMM') @OPCOMM
+				dd: a(href='https://www.facebook.com/groups/ComputerScienceHouse/') CSH on Facebook
+			a(href='donate.html', class='button').
+				Donate
+			a(href='sponsors.html', class='button').
+				Sponsors
+
+		ul.main
+			li: a(href='index.html', class='imgLink'): img(src='imgs/logo.svg', alt='CSH logo', class='logo')
+			li: ul
+				for currentPage in pages
+					if currentPage == page
+						li: a(href=currentPage + '.html', class=currentPage + ' selected')= currentPage.charAt(0).toUpperCase() + currentPage.slice(1)
+					else
+						li: a(href=currentPage + '.html', class=currentPage)= currentPage.charAt(0).toUpperCase() + currentPage.slice(1)
+			li: a(href='#', class='imgLink')
+				img(src='imgs/hamburger.png', alt='See more nav')

@@ -1,0 +1,55 @@
+nav {
+	ul {
+		list-style-type:none;
+		> li{
+			&,
+			> a {
+				display:inline-block;
+			}
+		}
+	}
+}
+
+.mainNav {
+	background-color:#333;
+	a { color:white; }
+	> .more {
+		display:none;
+	}
+	> .main {
+		display:table;
+		padding:1em 0;
+		width:100%;
+		> li {
+			// @extend %border-box;
+			display:table-cell;
+			vertical-align:middle;
+			&:first-child,
+			&:last-child {
+				// @extend %border-box;
+				width:calc(1em + 24px);
+				> a {
+					// @extend %border-box;
+					> img {
+						// @extend %border-box;
+						// padding-top:4px;
+					}
+				}
+			}
+			&:first-child > a {	padding-left:1em; }
+			&:last-child > a { padding-right:1em; }
+			> ul {
+				display:table;
+				width:100%;
+				> li {
+					display:table-cell;
+					width:25%;
+					> a {
+						display:block;
+						text-align:center;
+					}
+				}
+			}
+		}
+	}
+}
