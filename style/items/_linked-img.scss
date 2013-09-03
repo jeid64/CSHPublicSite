@@ -1,0 +1,5 @@
+.linked-img {
+	display:inline-block;
+	font-size:0;
+	> img { display:block; }
+}

@@ -1,0 +1,10 @@
+a {
+	text-decoration:none;
+	&:hover {
+		// color:
+	}
+	&:focus {
+		// Change outline color and play with width
+		outline:red solid 2px;
+	}
+}

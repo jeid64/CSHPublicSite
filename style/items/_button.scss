@@ -1,0 +1,10 @@
+.button {
+	color:white;
+	background-color:#333;
+	display:inline-block;
+	padding:.5em;
+	border-radius:1em;
+	&:after {
+		content:url('imgs/arrow.png');
+	}
+}

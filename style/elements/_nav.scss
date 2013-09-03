@@ -1,0 +1,11 @@
+nav {
+	ul {
+		list-style-type:none;
+		> li{
+			&,
+			> a {
+				display:inline-block;
+			}
+		}
+	}
+}

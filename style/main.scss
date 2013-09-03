@@ -6,9 +6,20 @@ $font-size:18;
 $line-height:1.6111;
 
 // IMPORTS
-@import "normalize";
-@import "mixins";
-@import "extends";
-@import "general";
-@import "nav";
-@import "imgs";
+@import "general/normalize";
+@import "general/mixins";
+@import "general/extends";
+@import "general/helpers";
+
+@import "elements/a";
+@import "elements/body";
+@import "elements/html";
+@import "elements/main";
+@import "elements/nav";
+@import "elements/selection";
+
+@import "items/main-nav";
+@import "items/button";
+@import "items/linked-img";
+
+@import "templates/splash";

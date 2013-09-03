@@ -1,16 +1,5 @@
-nav {
-	ul {
-		list-style-type:none;
-		> li{
-			&,
-			> a {
-				display:inline-block;
-			}
-		}
-	}
-}
-
-.mainNav {
+// reorganize this
+.main-nav {
 	background-color:#333;
 	a { color:white; }
 	> .more {
@@ -51,5 +40,8 @@ nav {
 				}
 			}
 		}
+	}
+	.logo {
+		height:24px;
 	}
 }
