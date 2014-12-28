@@ -1,6 +1,16 @@
-<?php include "header.php"; ?>
-<div id="big" class="title">
-	<div class="wrapper">
+<?php 
+include 'Mobile_Detect.php';
+$device = new Mobile_Detect;
+if ($device->isMobile()) {
+    include 'headerMobile.php';
+}
+else{
+	include 'header.php';	
+}
+
+?>
+<div id="big" class="toptitle">
+	<div class="topwrapper">
 		<h1>
 			Our Sponsors
 		</h1>
@@ -18,7 +28,7 @@
 				</span>
 			</td>
 			<td class="smallShow">
-				<a href="http://symantec.com" target="_blank"><img src="images/sponsorLogos/symantec.png" alt="Symantec"/></a>
+				<a href="http://amdexcorp.com" target="_blank"><img class="testImg" src="images/sponsorLogos/amdex.png" alt="Amdex"/></a>
 			</td>
 			<td class="smallShow">
 				<a href="http://ti.com" target="_blank"><img src="images/sponsorLogos/ti.png" alt="Texas Instruments"/></a>
@@ -27,7 +37,7 @@
 				<a href="http://xerox.com" target="_blank"><img src="images/sponsorLogos/xerox.png" alt="Xerox"/></a>
 			</td>
 			<td>
-				<a href="http://amdexcorp.com" target="_blank"><img class="testImg" src="images/sponsorLogos/amdex.png" alt="Amdex"/></a>
+				<a href="http://symantec.com" target="_blank"><img src="images/sponsorLogos/symantec.png" alt="Symantec"/></a>
 			</td>
 			<td>
 				<a href="http://att.com" target="_blank"><img src="images/sponsorLogos/att.png" alt="AT&T"/></a>
@@ -35,19 +45,19 @@
 		</tr>
 		<tr>
 			<td>
-				<a href="http://cadence.com" target="_blank"><img src="images/sponsorLogos/cadence.png" alt="Cadence"/></a>
+				<a href="http://dattobackup.com" target="_blank"><img src="images/sponsorLogos/datto.png" alt="Datto"/></a>
+			</td>
+			<td>
+				<a href="http://www.rochester.edu" target="_blank"><img src="images/sponsorLogos/UofR.png" alt="UofR"/></a>
+			</td>
+			<td>
+				<a href="http://linked.in" target="_blank"><img src="images/sponsorLogos/linkedin.png" alt="LinkedIn"/></a>
 			</td>
 			<td>
 				<a href="http://cisco.com" target="_blank"><img src="images/sponsorLogos/cisco.png" alt="Cisco"/></a>
 			</td>
 			<td>
-				<a href="http://citrix.com" target="_blank"><img src="images/sponsorLogos/citrix.png" alt="Citrix"/></a>
-			</td>
-			<td>
-				<a href="http://podi.org" target="_blank"><img src="images/sponsorLogos/podi.png" alt="PODi"/></a>
-			</td>
-			<td>
-				<a href="http://dupont.com" target="_blank"><img src="images/sponsorLogos/dupont.png" alt="DuPont"/></a>
+				<a href="http://microsoft.com" target="_blank"><img src="images/sponsorLogos/microsoft.png" alt="Microsoft"/></a>
 			</td>
 		</tr>
 		<tr>
@@ -116,20 +126,33 @@
 				<a href="http://perforce.com" target="_blank"><img src="images/sponsorLogos/perforce.png" alt="Perforce"/></a>
 			</td>
 			<td>
-				<a href="http://dattobackup.com" target="_blank"><img src="images/sponsorLogos/datto.png" alt="Datto"/></a>
+				<a href="http://cadence.com" target="_blank"><img src="images/sponsorLogos/cadence.png" alt="Cadence"/></a>
 			</td>
-			<td class="smallHide">
-				<a href="http://symantec.com" target="_blank"><img src="images/sponsorLogos/symantec.png" alt="Symantec"/></a>
+			<td>
+				<a href="http://podi.org" target="_blank"><img src="images/sponsorLogos/podi.png" alt="PODi"/></a>
 			</td>
-			<td class="smallHide">
-				<a href="http://ti.com" target="_blank"><img src="images/sponsorLogos/ti.png" alt="Texas Instruments"/></a>
+			<td>
+				<a href="http://dupont.com" target="_blank"><img src="images/sponsorLogos/dupont.png" alt="DuPont"/></a>
 			</td>
 		</tr>
 		<tr>
 			<td class="smallHide">
+				<a href="http://amdexcorp.com" target="_blank"><img class="testImg" src="images/sponsorLogos/amdex.png" alt="Amdex"/></a>
+			</td>
+			<td class="smallHide">
+				<a href="http://ti.com" target="_blank"><img src="images/sponsorLogos/ti.png" alt="Texas Instruments"/></a>
+			</td>
+			<td class="smallHide">
 				<a href="http://xerox.com" target="_blank"><img src="images/sponsorLogos/xerox.png" alt="Xerox"/></a>
+			</td>
+			<td class="smallHide">
+				<a href="http://citrix.com" target="_blank"><img src="images/sponsorLogos/citrix.png" alt="Citrix"/></a>
 			</td>
 		</tr>
 	</table>
 </div>
+<!-- Handle the Mobile Navigation -->
+<script src="jquery-latest.js"></script>
+<script src="navController.js"></script>
+
 <?php include "footer.php"; ?>

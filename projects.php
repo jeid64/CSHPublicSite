@@ -1,6 +1,16 @@
-<?php include "header.php"; ?>
-<div id="big" class="title">
-	<div class="wrapper">
+<?php 
+include 'Mobile_Detect.php';
+$device = new Mobile_Detect;
+if ($device->isMobile()) {
+    include 'headerMobile.php';
+}
+else{
+	include 'header.php';	
+}
+
+?>
+<div id="big" class="toptitle">
+	<div class="topwrapper">
 		<h1>
 			Our Projects
 		</h1>
@@ -18,6 +28,15 @@
 					<h2>Drink/Snack</h2>
 					<p>
 						Drink and snack are two of CSH's oldest projects. Networked vending machines allow members to order items from any internet browser using a credits system. A timer can also be specified to delay the release of a purchased item.
+					</p>
+				</span>
+			</li>
+			<li>
+				<img src="images/projects/raspi.jpg" />
+				<span>
+					<h2>One Project Per Freshman</h2>
+					<p>
+						Currently in its first year of operation, One Project Per Freshman looks to put the necessary tools in the hands of freshman to enable them to learn more about hardware electronics projects without a financial investment on their part. In its current form, an incoming freshman member would be given the choice between a Raspberry Pi or a Arduino with a starter kit to tinker with throughout the year.
 					</p>
 				</span>
 			</li>
@@ -57,16 +76,11 @@
 					</p>
 				</span>
 			</li>
-			<li>
-				<img src="images/projects/heroine.jpg" />
-				<span>
-					<h2>Heroine</h2>
-					<p>
-						An ongoing companion project to Drink, Heroine is a robot that will retrieve purchased drink items and bring them to the room of any specified member. The robot has the ability to navigate obstacles and can always determine its location on floor.
-					</p>
-				</span>
-			</li>
 		</ul>
 	</div>
 </div>
+<!-- Handle the Mobile Navigation -->
+<script src="jquery-latest.js"></script>
+<script src="navController.js"></script>
+
 <?php include "footer.php"; ?>

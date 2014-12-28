@@ -156,7 +156,7 @@ img.center {
 	font-size:80%;
 	background:#222;
 	height:0;
-	line-height:0;
+	line-height:40px;
 	overflow:hidden;
 	padding:0;
 	transition:all 0.3s;
@@ -207,16 +207,17 @@ img.center {
 	-moz-box-shadow:inset 0px -5px 5px rgba(0, 0, 0, 0.15);
 	box-shadow:inset 0px -5px 5px rgba(0, 0, 0, 0.15);
 	border-bottom:1px solid #498211;
+	margin-bottom:15px;
 }
-#big.title {
+#big.toptitle {
 	background-image:url('images/bigbkgdsmall.png');
 	font-family:'Eras', sans-serif;
-	height:60px;
 }
-.title .wrapper {
-	padding:0 30px;
+.toptitle .topwrapper {
+	padding-top:30px;
+	
 }
-#big.title h1 {
+#big.toptitle h1 {
 	line-height:60px;
 	color:white;
 	font-size:40px !important;

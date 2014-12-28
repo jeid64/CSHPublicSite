@@ -1,4 +1,14 @@
-<?php include "header.php"; ?>
+<?php 
+include 'Mobile_Detect.php';
+$device = new Mobile_Detect;
+if ($device->isMobile()) {
+    include 'headerMobile.php';
+}
+else{
+	include 'header.php';	
+}
+
+?>
 <div id="big">
 	<div class="wrapper">
 		<div id="left">
@@ -25,9 +35,9 @@
 			<img src="images/projects/arcade.jpg" alt="CSH Arcade Cabinet" />
 			<img src="images/projects/drink.jpg" alt="Drink" />
 			<img src="images/projects/infosys.jpg" alt="Infosys" />
-			<img src="images/projects/heroine.jpg" alt="Heroine" />
+			<img src="images/projects/schedulemaker.jpg" alt="Schedule Maker" />
 			<p>
-				Personal projects are a big part of CSH culture. Some of our biggest include CSH Arcade, Drink, InfoSys, and Heroine.
+				Personal projects are a big part of CSH culture. Some of our biggest include CSH Arcade, Drink, InfoSys, and Schedule Maker.
 			</p>
 		</div>
 	</div>
@@ -57,6 +67,10 @@
 		</div>
 	</div>
 </div>
+<!-- Handle the Mobile Navigation -->
+<script src="jquery-latest.js"></script>
+<script src="navController.js"></script>
+<!-- Text Sizing -->
 <script>
 	//Fit slogan to container
 	$('#fitText').fitText(1.25, {minFontSize:24});

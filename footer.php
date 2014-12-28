@@ -4,41 +4,38 @@
 					<h3>Site Map</h3>
 				</li>
 				<li>
-					<a href="./">Home</a>
+					<a href="/">Home</a>
 				</li>
 				<li>
-					<a href="about.php">About</a>
+					<a href="/about.php">About</a>
 					<ul>
 						<li>
-							<a href="projects.php">Projects</a>
+							<a href="/projects.php">Projects</a>
 						</li>
 						<li>
-							<a href="alumni.php">Alumni</a>
+							<a href="/alumni.php">Alumni</a>
 						</li>
 						<li>
-							<a href="eboard.php">Eboard</a>
-						</li>
-						<li>
-							<a href="tour.php">Tour</a>
+							<a href="/eboard.php">Eboard</a>
 						</li>
 					</ul>
 				</li>
 				<li>
-					<a href="membership.php">Membership</a>
+					<a href="/membership.php">Membership</a>
 					<ul>
 						<li>
-							<a href="traditions.php">Traditions</a>
+							<a href="/traditions.php">Traditions</a>
 						</li>
 						<li>
-							<a href="scholarship.php">Scholarship</a>
+							<a href="/tour.php">Tour</a>
 						</li>
 					</ul>
 				</li>
 				<li>
-					<a href="contact.php">Contact</a>
+					<a href="/contact.php">Contact</a>
 				</li>
 				<li>
-					<a href="sponsors.php">Sponsors</a>
+					<a href="/sponsors.php">Sponsors</a>
 				</li>
 			</ul>
 			<ul id="pr">
@@ -46,7 +43,7 @@
 					<h3>Public Resources</h3>
 				</li>
 				<li>
-					<a href="membership.php">How to Apply</a>
+					<a href="/membership.php">How to Apply</a>
 				</li>
 				<li>
 					<a href="http://schedule.csh.rit.edu/" target="_blank">CSH RIT Schedule Maker</a>
@@ -63,13 +60,10 @@
 					<h3>Member Resources</h3>
 				</li>
 				<li>
-					<a href="resources/CA-Certificate.crt">CA Certificate</a>
-				</li>
-				<li>
 					<a href="http://members.csh.rit.edu" target="_blank">Members' Portal</a>
 				</li>
 				<li>
-					<a href="https://github.com/ComputerScienceHouse/Constitution/blob/master/constitution.pdf?raw=true">Constitution</a>
+					<a href="https://github.com/ComputerScienceHouse/Constitution/blob/master/articles.pdf?raw=true">Constitution</a>
 				</li>
 				<li>
 					<a href="https://github.com/ComputerScienceHouse/Constitution/blob/master/bylaws.pdf?raw=true">By-laws</a>
@@ -86,10 +80,10 @@
 		<div class="wrapper">
 			<div id="under">
 				<p>
-					<a href="contact.php">webmaster@csh.rit.edu</a>
+					<a href="/contact.php">webmaster@csh.rit.edu</a>
 				</p>
 				<p>
-					<a href="https://github.com/myasonik/CSHPublicSite">Website on Github</a>
+					<a href="https://github.com/computersciencehouse/CSHPublicSite">Website on Github</a>
 				</p>
 				<p>
 					Copyright 2013 &copy; Computer Science House

@@ -1,6 +1,16 @@
-<?php include "header.php"; ?>
-<div id="big" class="title">
-	<div class="wrapper">
+<?php 
+include 'Mobile_Detect.php';
+$device = new Mobile_Detect;
+if ($device->isMobile()) {
+    include 'headerMobile.php';
+}
+else{
+	include 'header.php';	
+}
+
+?>
+<div id="big" class="toptitle">
+	<div class="topwrapper">
 		<h1>
 			Membership
 		</h1>
@@ -15,7 +25,7 @@
 		<img id="first" src="images/voting.jpg" width="400" height="350"/>
 		<strong>Incoming Students</strong>
 		<br />
-		Even before college, a great way to meet members and learn about CSH is to take a tour during RIT's open houses. On those days, members lead personalized tours of floor, highlighting our unique facilities, exemplary projects, and social atmosphere. For open house dates, visit the RIT admissions web site. If you are unable to attend an open house, email our <a href="contact.html">Evaluations Director</a> to schedule a time that is best for you. After being accepted to RIT, look for the Special Interest Housing selection in your RIT housing application to apply to CSH.
+		Even before college, a great way to meet members and learn about CSH is to take a tour during RIT's open houses. On those days, members lead personalized tours of floor, highlighting our unique facilities, exemplary projects, and social atmosphere. For open house dates, visit the RIT admissions web site. If you are unable to attend an open house, email our <a href="contact.php">Evaluations Director</a> to schedule a time that is best for you. After being accepted to RIT, look for the Special Interest Housing selection in your RIT housing application to apply to CSH.
 		<br /><br />
 
 		<strong>Current Students</strong>
@@ -68,4 +78,8 @@
 		</li>
 	</ul>
 </div>
+<!-- Handle the Mobile Navigation -->
+<script src="jquery-latest.js"></script>
+<script src="navController.js"></script>
+
 <?php include "footer.php"; ?>
