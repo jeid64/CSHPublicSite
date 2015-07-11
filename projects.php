@@ -22,6 +22,15 @@
 				</span>
 			</li>
 			<li>
+				<img src="images/projects/raspi.jpg" />
+				<span>
+					<h2>One Project Per Freshman</h2>
+					<p>
+						Currently in its first year of operation, One Project Per Freshman looks to put the necessary tools in the hands of freshman to enable them to learn more about hardware electronics projects without a financial investment on their part. In its current form, an incoming freshman member would be given the choice between a Raspberry Pi or a Arduino with a starter kit to tinker with throughout the year.
+					</p>
+				</span>
+			</li>
+			<li>
 				<img src="images/projects/schedulemaker.jpg" />
 				<span>
 					<h2><a href="http://schedule.csh.rit.edu/" target="_blank">Schedule Maker</a></h2>
@@ -44,7 +53,7 @@
 				<span>
 					<h2>Harold</h2>
 					<p>
-						With Harold, every member of CSH gets their own personal theme song. Audio clips can be uploaded and selected via a simple web interface and are played when a user touches their iButton (received upon membership) to an appropriate reader.
+						With Harold, every member of CSH gets his or her own theme song. After a user uploads either their song of playlist, all they have to do is touch their iButton or RDIF tag (received upon membership) to the appropriate reader.
 					</p>
 				</span>
 			</li>
@@ -54,15 +63,6 @@
 					<h2>InfoSys</h2>
 					<p>
 						InfoSys is a multi-purpose display board located in our User Center. It is capable of displaying weather statistics, custom messages, and even real-time player data from video games.
-					</p>
-				</span>
-			</li>
-			<li>
-				<img src="images/projects/heroine.jpg" />
-				<span>
-					<h2>Heroine</h2>
-					<p>
-						An ongoing companion project to Drink, Heroine is a robot that will retrieve purchased drink items and bring them to the room of any specified member. The robot has the ability to navigate obstacles and can always determine its location on floor.
 					</p>
 				</span>
 			</li>
